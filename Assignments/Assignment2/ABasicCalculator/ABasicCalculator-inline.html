@@ -20,7 +20,7 @@
 
 <body>
     <!-- Replace "Your Name Goes Here!" with your first and last name, thanks! -->
-    <h1>Your Name Goes Here!</h1>
+    <h1>Shawn Chumbar; Prakash Heramil</h1>
 
     <div id="content">
         <div id="calculator-container">
@@ -30,9 +30,22 @@
                 <!-- the name of the following textbox is "output" and it's value property is the text it shows-->
                 <input id="output" name="output" type="text" readonly> <br>
                 <input type="button" id="1" value="  1  " onclick="calc.output.value = calc.output.value + this.id">
-                <input type="button" id="2" value="  2  " onclick="calc.output.value += this.id"> <input type="button" id="3" value="  3  "> <input type="button" id="+" value="  +  "> <br> <input type="button" id="4" value="  4  "> <input type="button" id="5" value="  5  "> <input type="button" id="6" value="  6  "> <input type="button" id="-" value="  -  "> <br> <input type="button" id="7" value="  7  "> <input type="button" id="8" value="  8  "> <input type="button" id="9" value="  9  "> <input type="button" id="*" value="  x  "> <br> <input type="button" id="c" value="  C  "> <input type="button" id="0" value="  0  ">
+                <input type="button" id="2" value="  2  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="3" value="  3  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="+" value="  +  " onclick="calc.output.value += this.id"> <br> 
+                <input type="button" id="4" value="  4  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="5" value="  5  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="6" value="  6  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="-" value="  -  " onclick="calc.output.value += this.id"> <br> 
+                <input type="button" id="7" value="  7  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="8" value="  8  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="9" value="  9  " onclick="calc.output.value += this.id"> 
+                <input type="button" id="*" value="  x  " onclick="calc.output.value += this.id"> <br> 
+                <input type="button" id="c" value="  C  " onclick="calc.reset()"> 
+                <input type="button" id="0" value="  0  " onclick="calc.output.value += this.id">
                 <!-- Use the math.eval() function from the Math.js math library to parse and evaluate the String with mathematics in it -->
-                <input type="button" id="equate" value="  =  "> <input type="button" id="/" value="&divide;">
+                <input type="button" id="equate" value="  =  " onclick="calc.output.value = math.eval(calc.output.value)"> 
+                <input type="button" id="/" value="&divide;" onclick="calc.output.value += this.id">
             </form>
         </div>
         <h2>Part 1 Inline Version</h2>

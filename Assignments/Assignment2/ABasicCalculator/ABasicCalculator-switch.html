@@ -15,7 +15,7 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1>Your Name Goes Here!</h1>
+	<h1>Shawn Chumbar; Prakash Heramil</h1>
 	<!-- Replace "Your Name Goes Here!" with your first and last name, thanks! -->
 
 	<div id="content">
@@ -26,22 +26,23 @@
 					name="output" type="text" readonly>
 
 				<!-- the name of the textbox is "output" -->
-				<br> <input type="button" name="one" value="  1  ">
-				<input type="button" name="two" value="  2  "> <input
-					type="button" name="three" value="  3  "> <input
-					type="button" name="add" value="  +  "> <br> <input
-					type="button" name="four" value="  4  "> <input
-					type="button" name="five" value="  5  "> <input
-					type="button" name="six" value="  6  "> <input
-					type="button" name="subtract" value="  -  "> <br>
-				<input type="button" name="seven" value="  7  "> <input
-					type="button" name="eight" value="  8  "> <input
-					type="button" name="nine" value="  9  "> <input
-					type="button" name="multiply" value="  x  "> <br>
-				<input type="button" name="clear" value="  C  "> <input
-					type="button" name="zero" value="  0  "> <input
-					type="button" name="equate" value="  =  "> <input
-					type="button" name="divide" value="&divide;">
+				<br> 
+                <input type="button" name="one" value="  1  " onclick="calcu(this.name)"> 
+				<input type="button" name="two" value="  2  " onclick="calcu(this.name)"> 
+                <input type="button" name="three" value="  3  " onclick="calcu(this.name)"> 
+                <input type="button" name="add" value="  +  " onclick="calcu(this.name)">  <br> 
+                <input type="button" name="four" value="  4  " onclick="calcu(this.name)"> 
+                <input type="button" name="five" value="  5  " onclick="calcu(this.name)"> 
+                <input type="button" name="six" value="  6  " onclick="calcu(this.name)"> 
+                <input type="button" name="subtract" value="  -  " onclick="calcu(this.name)"> <br>
+				<input type="button" name="seven" value="  7  " onclick="calcu(this.name)"> 
+                <input type="button" name="eight" value="  8  " onclick="calcu(this.name)"> 
+                <input type="button" name="nine" value="  9  " onclick="calcu(this.name)"> 
+                <input type="button" name="multiply" value="  x  " onclick="calcu(this.name)"> <br>
+				<input type="button" name="clear" value="  C  " onclick="calcu(this.name)"> 
+                <input type="button" name="zero" value="  0  " onclick="calcu(this.name)"> 
+                <input type="button" name="equate" value="  =  " onclick="calcu(this.name)"> 
+                <input type="button" name="divide" value="&divide;" onclick="calcu(this.name)">
 			</form>
 		</div>
 		<h2>Part 2 Switch Version</h2>
@@ -49,6 +50,7 @@
 	<!-- source files -->
 	<script src="js/vendor/math.js"></script>
 	<!-- add script tag linking to switch.js here -->
+    <script src="js/switch.js"></script>
 	<!-- test spec files -->
 	<script src="js/test/switchSpec.js"></script>
 </body>

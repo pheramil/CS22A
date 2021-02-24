@@ -1,3 +1,5 @@
+// Shawn Chumbar; Prakash Heramil
+
 // The following comments are settings for various linters
 // Not sure if a reported error matters? Look it up at http://linterrors.com/js
 /*global math: false, calc: false, console: false, eval: false */
@@ -35,7 +37,51 @@ var calcu = function (calcValue) {
     "use strict";
     switch (calcValue) {
         // Add missing code here
-
+        case 'one':
+            calc.output.value += '1';
+            break;
+        case 'two':
+            calc.output.value += '2';
+            break;
+        case 'three':
+            calc.output.value += '3';
+            break;
+        case 'add':
+            calc.output.value += ' + ';
+            break;
+        case 'four':
+            calc.output.value += '4';
+            break;
+        case 'five':
+            calc.output.value += '5';
+            break;
+        case 'six':
+            calc.output.value += '6';
+            break;
+        case 'subtract':
+            calc.output.value += ' - ';
+            break;
+        case 'seven':
+            calc.output.value += '7';
+            break;
+        case 'eight':
+            calc.output.value += '8';
+            break;
+        case 'nine':
+            calc.output.value += '9';
+            break;
+        case 'multiply':
+            calc.output.value += ' * ';
+            break;
+        case 'clear':
+            calc.reset();
+            break;
+        case 'zero':
+            calc.output.value += '0';
+            break;
+        case 'divide':
+            calc.output.value += ' / ';
+            break;
         case "equate":
             // use the math.eval() function from the Math.js math library to parse and evaluate the String with mathematics in it
             calc.output.value = math.eval(calc.output.value);
