@@ -1,3 +1,5 @@
+// Shawn Chumbar; Prakash Heramil
+
 // The following comments are settings for various linters
 // Not sure if a reported error matters? Look it up at http://linterrors.com/js
 /*global math: false, calc: false, console: false, eval: false */
@@ -27,7 +29,7 @@ var calcu = function (calcValue) {
     if (calcValue) {
         // calcValue wasn't null or undefined'
 
-        // Add missing code here
+        // Add missing code here //TODO
 
     }
 };
@@ -38,3 +40,20 @@ var calcu = function (calcValue) {
 // script tag for ifelse.js is near the bottom of the
 // ABasicCalculator-ifelse.html page and there are no big images to
 // slow the loading of the HTML elements down it will all work OK without that.
+
+var inputs = document.getElementsByTagName("input");
+for (var elem in inputs) {
+    //TODO
+    console.log(elem.type)
+    if (elem.type != 'button'){
+        continue;
+    }
+    console.log(elem);
+}
+
+
+
+
+
+
+
