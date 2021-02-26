@@ -28,9 +28,39 @@ var calcu = function (calcValue) {
     "use strict";
     if (calcValue) {
         // calcValue wasn't null or undefined'
-
-        // Add missing code here //TODO
-
+        if (calcValue === "1") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "2") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "3") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "4") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "5") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "6") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "7") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "8") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "9") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "0") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "+") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "-") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "*") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "/") {
+            calc.output.value = calc.output.value + calcValue;
+        } else if (calcValue === "c") {
+            calc.reset();
+        } else {
+            calc.output.value = math.eval(calc.output.value);
+        }
     }
 };
 
@@ -41,19 +71,14 @@ var calcu = function (calcValue) {
 // ABasicCalculator-ifelse.html page and there are no big images to
 // slow the loading of the HTML elements down it will all work OK without that.
 
-var inputs = document.getElementsByTagName("input");
+const inputs = document.getElementsByTagName("input");
 for (var elem in inputs) {
-    //TODO
-    console.log(elem.type)
-    if (elem.type != 'button'){
+    var current_input_element = inputs[elem];
+    if (current_input_element.type != "button") {
         continue;
     }
-    console.log(elem);
+    current_input_element.onclick = function (event) {
+        console.log(this.id);
+        calcu(this.id);
+    };
 }
-
-
-
-
-
-
-
