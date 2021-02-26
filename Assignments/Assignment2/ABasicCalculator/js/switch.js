@@ -1,5 +1,3 @@
-// Shawn Chumbar; Prakash Heramil
-
 // The following comments are settings for various linters
 // Not sure if a reported error matters? Look it up at http://linterrors.com/js
 /*global math: false, calc: false, console: false, eval: false */
@@ -37,50 +35,50 @@ var calcu = function (calcValue) {
     "use strict";
     switch (calcValue) {
         // Add missing code here
-        case 'one':
-            calc.output.value += '1';
+        case "1":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'two':
-            calc.output.value += '2';
+        case "2":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'three':
-            calc.output.value += '3';
+        case "3":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'add':
-            calc.output.value += ' + ';
+        case "4":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'four':
-            calc.output.value += '4';
+        case "5":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'five':
-            calc.output.value += '5';
+        case "6":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'six':
-            calc.output.value += '6';
+        case "7":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'subtract':
-            calc.output.value += ' - ';
+        case "8":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'seven':
-            calc.output.value += '7';
+        case "9":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'eight':
-            calc.output.value += '8';
+        case "0":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'nine':
-            calc.output.value += '9';
+        case "+":
+            calc.output.value = calc.output.value + calcValue;
             break;
-        case 'multiply':
-            calc.output.value += ' * ';
+        case "-":
+           calc.output.value = calc.output.value + calcValue;
             break;
-        case 'clear':
+        case "/":
+           calc.output.value = calc.output.value + calcValue;
+            break;
+        case "*":
+            calc.output.value = calc.output.value + calcValue;
+            break;
+        case "C":
             calc.reset();
-            break;
-        case 'zero':
-            calc.output.value += '0';
-            break;
-        case 'divide':
-            calc.output.value += ' / ';
             break;
         case "equate":
             // use the math.eval() function from the Math.js math library to parse and evaluate the String with mathematics in it
